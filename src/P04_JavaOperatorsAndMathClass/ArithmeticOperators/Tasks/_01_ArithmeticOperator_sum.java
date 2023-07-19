@@ -1,0 +1,26 @@
+package P04_JavaOperatorsAndMathClass.ArithmeticOperators.Tasks;
+
+import java.util.Scanner;
+
+public class _01_ArithmeticOperator_sum {
+    public static void main(String[] args) {
+
+    /*    Verilen iki tane int  (num1 , num2),
+        Bu iki Integer'in toplamını yazdırın. */
+
+        Scanner dp = new Scanner(System.in);
+        int num1 = dp.nextInt();
+        int num2 = dp.nextInt();
+
+        //Kodu aşağıya yazınız.
+
+
+
+        System.out.println("sayilarin toplami"+num1 + num2);
+
+
+
+
+
+    }
+}
