@@ -1,4 +1,4 @@
-package P10_MethodCreation;
+package P10_MethodCreation00;
 
 import java.util.Scanner;
 

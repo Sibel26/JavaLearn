@@ -1,4 +1,4 @@
-package P10_MethodCreation.Sorular;
+package P10_MethodCreation00.Sorular;
 
 public class S02 {
     public static void main(String[] args) {

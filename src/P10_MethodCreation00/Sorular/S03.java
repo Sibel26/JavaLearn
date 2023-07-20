@@ -1,4 +1,4 @@
-package P10_MethodCreation.Sorular;
+package P10_MethodCreation00.Sorular;
 
 public class S03 { public static void main(String[] args) {
 // task-> girilen 3 sayının ortalamasını print eden ortalamaBul adında bir METHOD create ediniz

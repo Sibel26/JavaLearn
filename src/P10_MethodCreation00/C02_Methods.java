@@ -1,4 +1,4 @@
-package P10_MethodCreation;
+package P10_MethodCreation00;
 
 public class C02_Methods {
     public static void main(String[] args) {
