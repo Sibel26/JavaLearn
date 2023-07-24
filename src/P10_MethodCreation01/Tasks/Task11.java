@@ -1,4 +1,4 @@
-package P10_MethodCreation.Tasks;
+package P10_MethodCreation01.Tasks;
 
 import java.util.Scanner;
 
@@ -8,10 +8,10 @@ public class Task11 {
     public static void main(String[] args) {
         /* task-> girilen ifadeyi 'hacker' dilinde print eden METHOD create ediniz
 
-        a->=
-        v->-
-        c->+
-        e->?
+        a->7
+        v->1
+        c->-4
+        e->2
          */
 
 

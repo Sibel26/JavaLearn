@@ -1,4 +1,4 @@
-package P10_MethodCreation.Tasks;
+package P10_MethodCreation01.Tasks;
 
 public class Task19 {
 
@@ -10,9 +10,7 @@ public class Task19 {
 
 
     */
-        for (int i = 'a'/'a'; i <='d' ; i++) {
-            System.out.print(i+" ");
-        }
+
 
 
     }

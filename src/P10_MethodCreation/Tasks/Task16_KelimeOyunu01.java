@@ -39,8 +39,95 @@ public class Task16_KelimeOyunu01 {
         kelime = scan.next();//oyuncunun vediği kelimeyi class level'da hiçlik olarak ilk değerini verdiğim "kelime" değişkenine atadım
 
         // oyuncuyu degistirmek icin bir method yazmalıyız.
+        oyuncuDegistir();
 
+        onaySor();
     }
+
+    public static void onaySor() {
+        System.out.println("Girilen kelime : " + kelime);//girilen ilk oyuna başlama kelimesini gösterdim
+        System.out.println(oyuncu + ". oyuncu girilen kelimeyi kabul ediyor musun ? \n1: Evet \n0: Hayir");
+
+        int kabul = scan.nextInt();
+        if (kabul == 1) {   // 1 tercihi girilen kelimeyi kabul ediyor demektir
+
+            if (oyuncu == 1) {//işlemi yapan oyuncu 1. oyunucu ise....
+                puan2 += kelime.length();//puanı 2. oyuncuya kelime harf saysı kadar ekledik.
+            } else puan1 += kelime.length();//else:puanı 1. oyuncuya kelime harf saysı kadar ekledik.
+            oyunaDevamEdecekmi();
+
+        } else oyunuBitir(); //else:0 yani girilen kelimeyi kabul etmiyor demektir
+    }
+
+    private static void oyunaDevamEdecekmi() {
+        System.out.println("Oyuna devam etmek istiyor musunuz? "
+                + "\n1: Evet \n0: Hayir");
+        int tercih = scan.nextInt();
+        if (tercih == 1) {//1 seçimi oyune davam edecek anlamında
+            kelimeEkle();
+        } else {
+            System.out.println("Oyun bitti");
+            System.out.println("1.oyuncu puanı : " + puan1);
+            System.out.println("2.oyuncu puanı : " + puan2);
+            if (puan1 > puan2) {
+                System.out.println("1.oyuncu kazandi");
+            } else if (puan2 > puan1) {
+                System.out.println("2.oyuncu kazandi");
+            } else System.out.println("oyun berabere bitti");
+        }
+    }
+
+    public static void kelimeEkle() {
+        System.out.print("eski kelimeye eklemek icin yeni bir kelime giriniz :");
+        ekleme = scan.next();
+        System.out.println("yeni kelimeyi basa mi sona mi eklemek istersiniz "
+                + "\n 1:basa ekle 0:sona ekle");
+        int tercih = scan.nextInt();
+        if (tercih == 1) {
+            kelime = ekleme + kelime;
+        } else kelime = kelime + ekleme;
+        oyuncuDegistir();
+        onaySor();
+    }
+
+    private static void oyunuBitir() {
+        System.out.print("oyunu " + oyuncu + ". oyuncu oyunu kazandi. Cunku diger oyuncu yanlis kelime girdi");
+    }
+
+    public static void oyuncuDegistir() {
+        if (oyuncu == 1)
+            oyuncu = 2;
+        else
+            oyuncu = 1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
