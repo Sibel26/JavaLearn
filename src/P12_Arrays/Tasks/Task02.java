@@ -9,16 +9,6 @@ public class Task02 {
         Scanner input = new Scanner(System.in);
         System.out.print("Agam kaç elemanlı array istirsen : ");
         int arrayBoyut = input.nextInt();
-  //sum(arrayBoyut) integer türünde bir metot. sum(arrayBoyut) yazarak ben metotu çağırdım ve
-  // onu bir int değişkenine sum tanımladım.
-  //sonra sout ile yazdırdım.
-  //21:23 Uhr
-  //niye sum(arrayBoyut) yaparak metodu çağırıp yazdırmak zorunda kaldım?
-  // çünkü metodu aşağıda int türünde void olmayan bir metot olarak yazdım.
-        
-
-
-
 
 
     }

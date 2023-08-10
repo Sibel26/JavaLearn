@@ -11,19 +11,12 @@ public class Task10 {
         output :-1,-2,3,-4,5,6
 
          */
-        // cozum
+        int[] array  = {1,2,3,-7,10,5,6,-9,1,2};
 
-        int[] array = {1, 2,3,-7,10,5,6,-9,1,2};
-        int sayi = 5;
-        sayi = -1*sayi;
         System.out.println(Arrays.toString(array));
-        for(int i=0; i<array.length; i++) {
-            array[i] = -1*array[i];
+        for (int i = 0; i < array.length ; i++) {
+            array[i]=-1*array[i];
         }
         System.out.println(Arrays.toString(array));
-
-
-
-
     }
 }

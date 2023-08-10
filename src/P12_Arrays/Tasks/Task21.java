@@ -8,16 +8,23 @@ public class Task21 {
 		 input : int arr1[] = { 1, 2, 3, 4, 4, 3, 2, 1 };
 		 output : verilen array simetriktir
 		 */
-// basla sonu kontrol et anlamina geliyor
-        int arr1[] = { 1, 2, 3, 4, 4, 3, 2, 1 };
-        for (int i = 0; i <arr1.length ; i++) {
-           // System.out.println(i+","+ (arr1.length-1-i));        sor!!
+        int arr1[] = { 5, 2, 9, 4, 4, 9, 2, 5 };
+        for (int i = 0; i < arr1.length ; i++) {
             if (arr1[i] != arr1[arr1.length-1-i]) {
-                System.out.println("simetrik degildir: ");
+                System.out.println("simetrik değildirr");
                 break;
             }
         }
-// bir ala rib
+        // cozum 2
+        boolean simetriktir=true;
+        for (int i = 0; i < arr1.length/2 ; i++) {
+            if (arr1[i] != arr1[arr1.length-1-i]) {
+                simetriktir=false;
+                break;
+            }
+        }
+        if (simetriktir) System.out.println("simetriktir");
+        else System.out.println("Simetrik değildir");
 
     }
 }

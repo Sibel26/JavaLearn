@@ -1,8 +1,6 @@
-package P12_Arrays.Tasks;
+package Quiz;
 
-import java.util.Scanner;
-
-public class Task13 {
+public class Q10 {
 
     public static void main(String[] args) {
         /* TASK :

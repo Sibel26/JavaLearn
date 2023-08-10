@@ -9,15 +9,6 @@ public class S02 {
             if (sayiList[i] > eB) eB = sayiList[i];
         }
         System.out.println("Dizinin en büyük elamanı => " + eB);
-//sayiList dizisinin en kucugunu bulunuz
-        int[] sayiList1={10,3,4,67,5,6};
-        int eK = sayiList1[0];
-        for (int i =1; i<sayiList.length; i++){
-            if (sayiList[i] < eK) eK = sayiList[i];
-        }
-        System.out.println("Dizinin en kücük elamanı => " + eK);
-
-
 
 
     }
